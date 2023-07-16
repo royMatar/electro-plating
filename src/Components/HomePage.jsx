@@ -7,8 +7,10 @@ const HomePage = () => {
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          src="logo512.png"
           alt="First slide"
+          height={700}
+
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -18,8 +20,10 @@ const HomePage = () => {
       <Carousel.Item interval={500}>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          src="logo512.png"
           alt="Second slide"
+          height={700}
+
         />
         <Carousel.Caption>
           <h3>Second slide label</h3>
@@ -29,8 +33,9 @@ const HomePage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          src="logo512.png"
           alt="Third slide"
+          height={700}
         />
         <Carousel.Caption>
           <h3>Third slide label</h3>
