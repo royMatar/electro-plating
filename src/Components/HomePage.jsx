@@ -1,16 +1,15 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-
+import '../App.css';
 const HomePage = () => {
   return (
-    <Carousel>
+    <Carousel className="custom-carousel">
       <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
-          src="logo512.png"
+          src="copper.jpg"
           alt="First slide"
           height={700}
-
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -20,10 +19,9 @@ const HomePage = () => {
       <Carousel.Item interval={500}>
         <img
           className="d-block w-100"
-          src="logo512.png"
+          src="gold2.jpg"
           alt="Second slide"
           height={700}
-
         />
         <Carousel.Caption>
           <h3>Second slide label</h3>
@@ -33,7 +31,7 @@ const HomePage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="logo512.png"
+          src="silver.jpg"
           alt="Third slide"
           height={700}
         />
