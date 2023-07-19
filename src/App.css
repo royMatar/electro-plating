@@ -6,3 +6,7 @@
 .nav-links .nav-link:not(:last-child) {
   margin-right: 1rem; /* Adjust the value as needed */
 }
+
+.carousel-wrapper {
+  margin-top: 50px; /* Adjust the value to match the height of your navbar */
+}

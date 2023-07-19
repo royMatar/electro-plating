@@ -1,13 +1,19 @@
 import React, { useState } from "react";
-import { Navbar, Container, Offcanvas, Nav, NavDropdown } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Offcanvas,
+  Nav,
+  NavDropdown,
+} from "react-bootstrap";
 
 const Navigation = () => {
   const [expand, setExpand] = useState("lg");
 
   return (
-    <Container className="mt-3">
-      <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
-        <Container fluid>
+    <Container className="mt-3" >
+      <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 fixed-top" style={{ backgroundColor: "transparent" }} >
+        <Container >
           <Navbar.Brand href="#">ElectroPlating</Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
           <Navbar.Offcanvas
@@ -56,7 +62,9 @@ const Navigation = () => {
                   title="Industries"
                   id={`offcanvasNavbarDropdown-expand-${expand}`}
                 >
-                  <NavDropdown.Item href="#action3">Automotive</NavDropdown.Item>
+                  <NavDropdown.Item href="#action3">
+                    Automotive
+                  </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action3">Furniture</NavDropdown.Item>
                   <NavDropdown.Divider />
@@ -81,6 +89,7 @@ const Navigation = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="#action1">Contact us</Nav.Link>
+                <Nav.Link href="#action1">FAQs</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

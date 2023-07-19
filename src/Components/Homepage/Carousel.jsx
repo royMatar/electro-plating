@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react'
 import Carousel from "react-bootstrap/Carousel";
-import '../App.css';
-const HomePage = () => {
+
+const Crsl = () => {
   return (
+    <div className='carousel-wrapper'>
     <Carousel className="custom-carousel">
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
           src="copper.jpg"
@@ -16,7 +17,7 @@ const HomePage = () => {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
           src="gold2.jpg"
@@ -28,7 +29,7 @@ const HomePage = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
           src="silver.jpg"
@@ -43,7 +44,9 @@ const HomePage = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-  );
-};
+    </div>
 
-export default HomePage;
+  )
+}
+
+export default Crsl
