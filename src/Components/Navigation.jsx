@@ -90,7 +90,6 @@ const Navigation = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link as={Link} to="/contact">Contact us</Nav.Link>
-                <Nav.Link as={Link} to="/faq">FAQs</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

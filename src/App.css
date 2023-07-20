@@ -3,10 +3,14 @@
   margin-top: 1rem; /* Adjust the value as needed */
 }
 
-.nav-links .nav-link:not(:last-child) {
-  margin-right: 1rem; /* Adjust the value as needed */
+/* Width and color of the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #c5c5c5;
 }
 
-.carousel-wrapper {
-  margin-top: 50px; /* Adjust the value to match the height of your navbar */
+/* Styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #444444;
+  /* border-radius: 6px; */
 }

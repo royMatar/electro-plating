@@ -7,10 +7,8 @@ import Col from "react-bootstrap/Col";
 import HomePage from "./Components/Homepage/HomePage";
 import Footer from "./Components/Footer";
 import { Routes, Router, Route } from 'react-router-dom';
-import ContactPage from "./Components/ContactPage";
-import IndustriesPage from "./Components/IndustriesPage";
-import ServicePage from "./Components/ServicePage";
-import AboutPage from "./Components/AboutPage";
+import ContactPage from "./Components/Contactpage/ContactPage";
+import AboutPage from "./Components/Aboutpage/AboutPage";
 
 function App() {
   return (
@@ -20,8 +18,6 @@ function App() {
         <Route path="/" element={<HomePage/>} />
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/contact" element={<ContactPage/>} />
-        <Route path="/industries" element={<IndustriesPage/>} />
-        <Route path="/services" element={<ServicePage/>} />
       </Routes>
       <Footer />
     </>
