@@ -6,6 +6,7 @@ import {
   Nav,
   NavDropdown,
 } from "react-bootstrap";
+import {  Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [expand, setExpand] = useState("lg");
@@ -14,7 +15,7 @@ const Navigation = () => {
     <Container className="mt-3" >
       <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 fixed-top" style={{ backgroundColor: "transparent" }} >
         <Container >
-          <Navbar.Brand href="#">ElectroPlating</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">ElectroPlating</Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
@@ -28,33 +29,33 @@ const Navigation = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3 nav-links">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">About</Nav.Link>
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
                 <NavDropdown
                   title="Services"
                   id={`offcanvasNavbarDropdown-expand-${expand}`}
                 >
-                  <NavDropdown.Item href="#action3">
+                  <NavDropdown.Item as={Link} to="/finishing">
                     Metal Finishing
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action4">
+                  <NavDropdown.Item as={Link} to="/types">
                     Plating Types
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action4">
+                  <NavDropdown.Item as={Link} to="/decorative">
                     Decorative Coatings
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action4">
+                  <NavDropdown.Item as={Link} to="/restoration">
                     Metal Restoration
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action4">
+                  <NavDropdown.Item as={Link} to="/quality-control">
                     Quality Control and Testing
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
+                  <NavDropdown.Item as={Link} to="/consultation">
                     Consultation and Technical Expertise
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -62,34 +63,34 @@ const Navigation = () => {
                   title="Industries"
                   id={`offcanvasNavbarDropdown-expand-${expand}`}
                 >
-                  <NavDropdown.Item href="#action3">
+                  <NavDropdown.Item as={Link} to="/">
                     Automotive
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action3">Furniture</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/furniture">Furniture</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action3">
+                  <NavDropdown.Item as={Link} to="/jewelry">
                     Jewelry and Fashion
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action3">
+                  <NavDropdown.Item as={Link} to="/medical">
                     Medical and Healthcare
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action3">
+                  <NavDropdown.Item as={Link} to="/plumbing">
                     Plumbing and Sanitary
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action4">
+                  <NavDropdown.Item as={Link} to="/electronics">
                     Electronics and Electrical
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action3">
+                  <NavDropdown.Item as={Link} to="/military-apps">
                     Military Applications
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#action1">Contact us</Nav.Link>
-                <Nav.Link href="#action1">FAQs</Nav.Link>
+                <Nav.Link as={Link} to="/contact">Contact us</Nav.Link>
+                <Nav.Link as={Link} to="/faq">FAQs</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
