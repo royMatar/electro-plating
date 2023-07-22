@@ -1,5 +1,4 @@
 import React from "react";
-import Crsl from "./Carousel";
 import Intro from "./Intro";
 import KeyServices from "./KeyServices";
 
@@ -8,7 +7,6 @@ import KeyServices from "./KeyServices";
 const HomePage = () => {
   return (
     <>
-      <Crsl />
       <Intro />
       <KeyServices/>
     </>
