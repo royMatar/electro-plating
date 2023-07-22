@@ -27,3 +27,27 @@ font-weight: 600;
 #link:hover{
   color: #EF8354;
 }
+
+/* Heading.css */
+
+/* Add the media query for smaller screens */
+.textStyle-responsive{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Bowlby One 'sans-serif;
+    font-weight:bolder;
+    text-align: center;
+    width: 50%;
+    
+}
+
+@media screen and (max-width: 767px) {
+  .textStyle-responsive {
+    font-size: 36px;
+  }
+}
