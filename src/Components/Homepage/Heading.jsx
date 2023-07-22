@@ -10,7 +10,7 @@ const Heading = () => {
 
   const imageStyle = {
     width: '100%',
-    height: '80vh',
+    height: '85vh',
     filter: 'blur(3px)',
   };
 

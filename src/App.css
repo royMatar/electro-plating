@@ -3,7 +3,6 @@
   width: 12px;
   background-color: #2B3035;
 }
-/* #EF8354 */
 /* Styles for the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
   background-color: #8a8a8a;
@@ -28,9 +27,6 @@ font-weight: 600;
   color: #EF8354;
 }
 
-/* Heading.css */
-
-/* Add the media query for smaller screens */
 .textStyle-responsive{
   position: absolute;
     top: 50%;
@@ -46,6 +42,34 @@ font-weight: 600;
     
 }
 
+.introsection{
+  height: 350px;
+  background-color: #EF8354;
+  padding: 150px;
+  display: flex;
+
+}
+
+.textposition{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.firstcol{
+  font-size: 36px;
+  font-family: 'Bowlby One 'sans-serif;
+  color: #2B3035;
+  font-weight: bold;
+  text-align: center;
+}
+.secondcol{
+  font-family: 'Candara ';
+  color: #2B3035;
+  font-size: 18px;
+}
 @media screen and (max-width: 767px) {
   .textStyle-responsive {
     font-size: 36px;
