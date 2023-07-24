@@ -7,7 +7,6 @@ import Col from "react-bootstrap/Col";
 import HomePage from "./Components/Homepage/HomePage";
 import Footer from "./Components/Footer";
 import { Routes, Router, Route } from 'react-router-dom';
-import ContactPage from "./Components/Contactpage/ContactPage";
 import AboutPage from "./Components/Aboutpage/AboutPage";
 
 function App() {
@@ -16,8 +15,8 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<HomePage/>} />
-        <Route path="/about" element={<AboutPage/>} />
-        <Route path="/contact" element={<ContactPage/>} />
+        {/* <Route path="/about" element={<AboutPage/>} />
+        <Route path="/contact" element={<Contact/>} /> */}
       </Routes>
       <Footer />
     </>

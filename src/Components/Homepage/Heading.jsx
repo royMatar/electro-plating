@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'react-bootstrap/Image';
 
 const Heading = () => {
   const headingStyle = {
@@ -16,7 +17,7 @@ const Heading = () => {
 
   return (
     <div style={headingStyle}>
-      <img src="image1.jpg" style={imageStyle} />
+      <Image  src="image1.jpg" style={imageStyle} fluid/>
       <div className="textStyle-responsive">Revolutionize Your Industry with Superior Plating.</div>
     </div>
   );

@@ -1,8 +1,9 @@
 import React from 'react'
+import Container from "react-bootstrap/Container";
 
 const FAQ = () => {
   return (
-    <div>FAQ</div>
+    <Container>FAQ</Container>
   )
 }
 

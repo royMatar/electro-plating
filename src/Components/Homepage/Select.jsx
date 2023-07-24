@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 
 const Select = () => {
   return (
-    <Container>
+    <Container className="accordion">
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="1">
           <Accordion.Header>Accordion Item #1</Accordion.Header>
@@ -18,7 +18,7 @@ const Select = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="1">
+        <Accordion.Item eventKey="2">
           <Accordion.Header>Accordion Item #2</Accordion.Header>
           <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -30,7 +30,7 @@ const Select = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="1">
+        <Accordion.Item eventKey="3">
           <Accordion.Header>Accordion Item #1</Accordion.Header>
           <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
