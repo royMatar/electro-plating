@@ -98,6 +98,16 @@
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
+/* KeyServices.css */
+.card-hover-animation {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add the transition property for box-shadow and transform */
+}
+
+.card-hover-animation:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Apply the hover shadow */
+  transform: scale(1.05); /* Apply the scale animation */
+}
+
 
 @media screen and (max-width: 767px) {
   .textStyle-responsive {

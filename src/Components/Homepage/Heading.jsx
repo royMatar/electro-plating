@@ -13,6 +13,7 @@ const Heading = () => {
     width: '100%',
     height: '85vh',
     filter: 'blur(3px)',
+    objectFit: 'cover',
   };
 
   return (

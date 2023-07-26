@@ -1,50 +1,93 @@
-import React from 'react'
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import ListGroup from "react-bootstrap/ListGroup";
+
+const cardTitleStyle = {
+  fontSize: "24px",
+  fontWeight: "800",
+  marginBottom: "10px",
+  color: "#2D3142",
+  fontFamily: "'Bowlby One', sans-serif",
+};
+
+const cardTextStyle = {
+  fontSize: "16px",
+  color: "#2D3142",
+  fontFamily: "'Bowlby One', sans-serif",
+};
+
 const KeyServices = () => {
+  const industries = [
+    {
+      id: 1,
+      title: "Automotive",
+      text: "Enhance your vehicle with our premium electroplating treatments.",
+      image: "image9.jpg",
+    },
+    {
+      id: 2,
+      title: "Jewelry",
+      text: " Elevate your worn jewelry items into exquisite treasures through our expert electroplating services.",
+      image: "image17.jpg",
+    },
+    {
+      id: 3,
+      title: "Furniture",
+      text: "Experience unparalleled artistry with our electroplating solutions for furniture.",
+      image: "goldfurniture.jpg",
+    },
+    {
+      id: 4,
+      title: "Plumbing",
+      text: "Achieve lasting durability and precision plating for sanitary equipment.",
+      image: "image15.jpg",
+    },
+    {
+      id: 5,
+      title: "Restoration",
+      text: "Impeccable results guaranteed with our meticulous electroplating processes for restoration projects.",
+      image: "image14.jpg",
+    },
+    {
+      id: 6,
+      title: "Military",
+      text: "Revitalize your firearms with our electroplating service, transforming them into gleaming pieces.",
+      image: "gunimage.jpg",
+    },
+  ];
   return (
     <Container
-        style={{
-          height: "auto",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          paddingBottom: "100px",
-          paddingTop: "100px",
-        }}
-      >
-        <Row xs={1} sm={2} md={3} className="g-4">
-          {Array.from({ length: 6 }).map((_, idx) => (
-            <Col key={idx}>
-              <Card>
-                <Card.Img variant="top" src="copper.jpg" height={200} />
-                <Card.Body>
-                  <Card.Title>Card title</Card.Title>
-                  <Card.Subtitle>Card subtitle</Card.Subtitle>
-                  <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </Card.Text>
-                </Card.Body>
-                <ListGroup className="list-group-flush">
-                  <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                  <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                </ListGroup>
-                <Card.Body>
-                  <Card.Link href="#">Card Link</Card.Link>
-                  <Card.Link href="#">Another Link</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-  )
-}
+      style={{
+        height: "auto",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        paddingBottom: "100px",
+        marginTop: "200px",
+      }}
+    >
+      <Row xs={1} sm={2} md={3} className="g-4">
+        {industries.map((industry) => (
+          <Col key={industry.id}>
+            <Card className="h-100 card-hover-animation">
+              <Card.Img
+                variant="top"
+                src={industry.image}
+                height={300}
+                style={{ objectFit: "cover" }}
+              />
+              <Card.Body>
+                <Card.Title style={cardTitleStyle}>{industry.title}</Card.Title>
+                <Card.Text style={cardTextStyle}>{industry.text}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  );
+};
 
-export default KeyServices
+export default KeyServices;
