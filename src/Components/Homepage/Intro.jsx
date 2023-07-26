@@ -8,8 +8,8 @@ const Intro = () => {
     <Container fluid className="introsection">
       <Container className="textposition" >
         <Row>
-          <Col className="firstcol">A Shining Legacy</Col>
-          <Col className="secondcol">
+          <Col className="firstcol" sm={6}>A Shining Legacy</Col>
+          <Col className="secondcol" sm={6}>
             We’re the go-to electroplating company, thriving on expert
             techniques and top-notch quality to transform products and breathe
             new life into old stuff. Let us show you the true meaning of

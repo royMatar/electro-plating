@@ -33,6 +33,7 @@ const Navigation = () => {
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-${expand}`}
           onClick={handleOffcanvasToggle}
+          style={{ borderColor: "#EF8354",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)" }}
         />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${expand}`}
@@ -56,7 +57,7 @@ const Navigation = () => {
           <Offcanvas.Body>
             <Nav
               className="justify-content-end flex-grow-1 pe-4 nav-links"
-              onClick={handleLinkClick} // Close offcanvas when a link is clicked
+              onClick={handleLinkClick}
             >
               <Nav.Link as={Link} to="/" id="link">
                 Home
