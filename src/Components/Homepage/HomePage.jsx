@@ -4,12 +4,11 @@ import KeyServices from "./KeyServices";
 import Heading from "./Heading";
 import Container from "react-bootstrap/Container";
 import CallAction from "./CallAction";
-import Select from "./Select";
 import Metalprice from "./Metalprice";
 import Trustedby from './Trustedby';
 import Contact from '../Contactpage/Contact';
 import FAQ from './FAQ';
-//https://metalpriceapi.com/
+
 
 const HomePage = () => {
   return (
@@ -17,8 +16,8 @@ const HomePage = () => {
       <Heading />
       <Intro />
       <CallAction />
-      <Select />
-      <Metalprice/>
+      {/* to be added later before publishing, API free - limited requests */}
+      {/* <Metalprice/> */}
       <KeyServices />
       <Trustedby/>
       <Contact/>
