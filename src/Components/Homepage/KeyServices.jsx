@@ -58,35 +58,49 @@ const KeyServices = () => {
     },
   ];
   return (
-    <Container
-      style={{
-        height: "auto",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        paddingBottom: "100px",
-        marginTop: "200px",
-      }}
-    >
-      <Row xs={1} sm={2} md={3} className="g-4">
-        {industries.map((industry) => (
-          <Col key={industry.id}>
-            <Card className="h-100 card-hover-animation">
-              <Card.Img
-                variant="top"
-                src={industry.image}
-                height={300}
-                style={{ objectFit: "cover" }}
-              />
-              <Card.Body>
-                <Card.Title style={cardTitleStyle}>{industry.title}</Card.Title>
-                <Card.Text style={cardTextStyle}>{industry.text}</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <>
+      <Container
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "200px",
+        }}
+      >
+        <h1 className="title-header">Industries</h1>
+      </Container>
+
+      <Container
+        style={{
+          height: "auto",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          paddingBottom: "100px",
+          marginTop: "100px",
+        }}
+      >
+        <Row xs={1} sm={2} md={3} className="g-4">
+          {industries.map((industry) => (
+            <Col key={industry.id}>
+              <Card className="h-100 card-hover-animation">
+                <Card.Img
+                  variant="top"
+                  src={industry.image}
+                  height={300}
+                  style={{ objectFit: "cover" }}
+                />
+                <Card.Body>
+                  <Card.Title style={cardTitleStyle}>
+                    {industry.title}
+                  </Card.Title>
+                  <Card.Text style={cardTextStyle}>{industry.text}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </>
   );
 };
 
