@@ -12,7 +12,7 @@ const Trustedby = () => {
   ];
 
   return (
-    <Container style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '100px' }}>
+    <Container style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '200px' }}>
       <h1 className="title-header">Trusted by</h1>
       <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', marginTop: '100px' }}>
         {companyLogos.map((company, index) => (

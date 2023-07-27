@@ -57,6 +57,15 @@ const KeyServices = () => {
       image: "gunimage.jpg",
     },
   ];
+
+  const {
+    fontSize: titleFontSize,
+    fontWeight,
+    color: titleColor,
+    fontFamily,
+  } = cardTitleStyle;
+  const { fontSize, color, fontFamily: textStyleFontFamily } = cardTextStyle;
+
   return (
     <>
       <Container
@@ -64,21 +73,13 @@ const KeyServices = () => {
           display: "flex",
           justifyContent: "center",
           marginTop: "200px",
+          marginBottom:'100px',
         }}
       >
         <h1 className="title-header">Industries</h1>
       </Container>
 
-      <Container
-        style={{
-          height: "auto",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          paddingBottom: "100px",
-          marginTop: "100px",
-        }}
-      >
+      <Container className="mb-5">
         <Row xs={1} sm={2} md={3} className="g-4">
           {industries.map((industry) => (
             <Col key={industry.id}>
@@ -90,10 +91,25 @@ const KeyServices = () => {
                   style={{ objectFit: "cover" }}
                 />
                 <Card.Body>
-                  <Card.Title style={cardTitleStyle}>
+                  <Card.Title
+                    style={{
+                      fontSize: titleFontSize,
+                      fontWeight,
+                      color: titleColor,
+                      fontFamily,
+                    }}
+                  >
                     {industry.title}
                   </Card.Title>
-                  <Card.Text style={cardTextStyle}>{industry.text}</Card.Text>
+                  <Card.Text
+                    style={{
+                      fontSize,
+                      color,
+                      fontFamily: textStyleFontFamily,
+                    }}
+                  >
+                    {industry.text}
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
