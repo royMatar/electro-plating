@@ -20,8 +20,7 @@ const Contact = () => {
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email").required("Email is required"),
-    country: Yup.string().required("Country is required"),
-    reason: Yup.string().required("Reason for contact is required"),
+    reason: Yup.string().required("Message is required"),
     agreeTerms: Yup.boolean().oneOf(
       [true],
       "You must agree to the terms and conditions"

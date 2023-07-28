@@ -100,7 +100,7 @@
 
 /* KeyServices.css */
 .card-hover-animation {
-  filter: grayscale(100%);
+  filter:  drop-shadow(4px 4px 5px #000000) ;
   transition: filter 0s ease;
 }
 
