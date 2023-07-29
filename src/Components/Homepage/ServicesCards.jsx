@@ -83,12 +83,12 @@ const KeyServices = () => {
         <Row xs={1} sm={2} md={3} className="g-4">
           {industries.map((industry) => (
             <Col key={industry.id}>
-              <Card className="h-100">
+              <Card className="h-100" style={{borderRadius:"40px"}}>
                 <Card.Img
                   variant="top"
                   src={industry.image}
                   height={300}
-                  style={{ objectFit: "cover"  }}
+                  style={{ objectFit: "cover", borderRadius:"40px"  }}
                   className="imageeffect"
                 />
                 <Card.Body>

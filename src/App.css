@@ -60,7 +60,7 @@
 .firstcol {
   font-size: 36px;
   font-family: 'Bowlby One ' sans-serif;
-  color: #2D3142;
+  color: #2B3035;
   font-weight: 900;
   text-align: start;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -70,7 +70,7 @@
 
 .secondcol {
   font-family: 'Bowlby One ' sans-serif;
-  color: #2D3142;
+  color: #2B3035;
   font-size: 18px;
   font-weight: bold;
 }
@@ -107,7 +107,7 @@
 
 .title-header{
   font-family: 'Bowlby One ' sans-serif;
-  color: #2D3142;
+  color: #2B3035;
   font-size: 48px;
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.726);
@@ -120,11 +120,27 @@
 
 .form-label{
   font-family: 'Bowlby One ' sans-serif;
-  color: #2D3142;
+  color: #2B3035;
   font-size: 18px;
   font-weight: bold;
 }
 
+.faq-title{
+  font-family: 'Bowlby One ' sans-serif;
+  color: #2B3035;
+  font-weight: 800;
+}
+.faq-text{
+  font-family: 'Bowlby One ' sans-serif;
+  color: #2B3035;
+  font-weight: bold;
+}
+
+.footer-bg{
+  color: #8a8a8a;
+ background-color:  #2B3035;
+ padding: 10px;
+}
 @media screen and (max-width: 767px) {
   .textStyle-responsive {
     font-size: 46px;

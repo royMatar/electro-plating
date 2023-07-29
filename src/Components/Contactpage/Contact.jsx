@@ -87,8 +87,8 @@ const Contact = () => {
                   <ErrorMessage
                     name="name"
                     component="div"
-                    className="text-danger"
-                  />
+                    style={{ color: '#EF8354', fontSize: '14px', marginTop: '5px' }}
+                    />
                 </div>
 
                 <div className="mb-3">
@@ -106,8 +106,8 @@ const Contact = () => {
                   <ErrorMessage
                     name="email"
                     component="div"
-                    className="text-danger"
-                  />
+                    style={{ color: '#EF8354', fontSize: '14px', marginTop: '5px' }}
+                    />
                 </div>
 
                 <div className="mb-3">
@@ -125,8 +125,8 @@ const Contact = () => {
                   <ErrorMessage
                     name="company"
                     component="div"
-                    className="text-danger"
-                  />
+                    style={{ color: '#EF8354', fontSize: '14px', marginTop: '5px' }}
+                    />
                 </div>
 
                 <div className="mb-3">
@@ -144,8 +144,8 @@ const Contact = () => {
                   <ErrorMessage
                     name="reason"
                     component="div"
-                    className="text-danger"
-                  />
+                    style={{ color: '#EF8354', fontSize: '14px', marginTop: '5px' }}
+                    />
                 </div>
 
                 <div className="mb-3">
@@ -162,12 +162,12 @@ const Contact = () => {
                     <ErrorMessage
                       name="agreeTerms"
                       component="div"
-                      className="text-danger"
+                      style={{ color: '#EF8354', fontSize: '14px', marginTop: '5px' }}
                     />
                   </FormCheck>
                 </div>
 
-                <Button type="submit" variant="secondary" disabled={isSubmitting}>
+                <Button type="submit" variant="dark" disabled={isSubmitting}>
                   Submit
                 </Button>
               </Form>
