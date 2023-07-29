@@ -30,17 +30,17 @@
 
 .textStyle-responsive {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 6vw;
-  color: #ffffff;
+  color: #ffe4d8;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Bowlby One ' sans-serif;
   font-weight: 900;
   text-align: center;
-  width: 70%;
-
+  width: 65%;
+  line-height: 1;
 }
 
 .introsection {
@@ -64,6 +64,7 @@
   font-weight: 900;
   text-align: start;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
 
 }
 
@@ -75,47 +76,53 @@
 }
 
 .callaction {
-  height: 350px;
+  height: auto;
   padding: 70px;
 }
 
+
 .metallist {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   justify-content: end;
-  margin-top: 150px;
-}
-
-.accordion {
-  margin-top: 150px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 
 }
+
 
 .callactionbtn {
-
   margin-top: 30px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
 }
 
 /* KeyServices.css */
-.card-hover-animation {
-  filter:  drop-shadow(4px 4px 5px #000000) ;
-  transition: filter 0s ease;
+.imageeffect{
+  filter: grayscale(100%)
 }
 
-.card-hover-animation:hover {
+.imageeffect:hover {
   filter: grayscale(0%);
-
 }
 
 .title-header{
   font-family: 'Bowlby One ' sans-serif;
   color: #2D3142;
-  font-size: 42px;
+  font-size: 48px;
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.726);
 
+}
+
+.orange-bg{
+  background-color: #EF8354;
+}
+
+.form-label{
+  font-family: 'Bowlby One ' sans-serif;
+  color: #2D3142;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
@@ -125,7 +132,18 @@
 
   .metallist {
     flex-wrap: wrap;
-    margin-top: 250px;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
+  
+  .imageeffect{
+    filter: grayscale(0%);
+  }
+  .textStyle-responsive {
+  width: 90%;
+  }
+
+  
 }
+

@@ -4,20 +4,6 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-const cardTitleStyle = {
-  fontSize: "24px",
-  fontWeight: "800",
-  marginBottom: "10px",
-  color: "#2D3142",
-  fontFamily: "'Bowlby One', sans-serif",
-};
-
-const cardTextStyle = {
-  fontSize: "16px",
-  color: "#2D3142",
-  fontFamily: "'Bowlby One', sans-serif",
-};
-
 const KeyServices = () => {
   const industries = [
     {
@@ -42,7 +28,7 @@ const KeyServices = () => {
       id: 4,
       title: "Plumbing",
       text: "Achieve lasting durability and precision plating for sanitary equipment.",
-      image: "image15.jpg",
+      image: "image6.jpg",
     },
     {
       id: 5,
@@ -58,6 +44,20 @@ const KeyServices = () => {
     },
   ];
 
+  const cardTitleStyle = {
+    fontSize: "24px",
+    fontWeight: "800",
+    marginBottom: "10px",
+    color: "#2D3142",
+    fontFamily: "'Bowlby One', sans-serif",
+  };
+
+  const cardTextStyle = {
+    fontSize: "16px",
+    color: "#2D3142",
+    fontFamily: "'Bowlby One', sans-serif",
+  };
+
   const {
     fontSize: titleFontSize,
     fontWeight,
@@ -72,8 +72,8 @@ const KeyServices = () => {
         style={{
           display: "flex",
           justifyContent: "center",
-          marginTop: "200px",
-          marginBottom:'100px',
+          marginTop: "100px",
+          marginBottom: "100px",
         }}
       >
         <h1 className="title-header">Industries</h1>
@@ -83,12 +83,13 @@ const KeyServices = () => {
         <Row xs={1} sm={2} md={3} className="g-4">
           {industries.map((industry) => (
             <Col key={industry.id}>
-              <Card className="h-100 card-hover-animation">
+              <Card className="h-100">
                 <Card.Img
                   variant="top"
                   src={industry.image}
                   height={300}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover"  }}
+                  className="imageeffect"
                 />
                 <Card.Body>
                   <Card.Title

@@ -12,13 +12,13 @@ const Heading = () => {
   const imageStyle = {
     width: '100%',
     height: '85vh',
-    // filter: 'blur(3px)',
+    filter: 'grayscale(00%)',
     objectFit: 'cover',
   };
 
   return (
     <div style={headingStyle}>
-      <Image  src="image16.jpg" style={imageStyle} fluid/>
+      <Image  src="version 1.jpg" style={imageStyle} fluid/>
       <div className="textStyle-responsive">Revolutionize Your Industry with Superior Plating.</div>
     </div>
   );

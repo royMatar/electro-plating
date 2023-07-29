@@ -18,9 +18,9 @@ const Contact = () => {
   };
 
   const validationSchema = Yup.object().shape({
-    name: Yup.string().required("Name is required"),
-    email: Yup.string().email("Invalid email").required("Email is required"),
-    reason: Yup.string().required("Message is required"),
+    name: Yup.string().required("Your name is required"),
+    email: Yup.string().email("Invalid email").required("Your email is required"),
+    reason: Yup.string().required("Your message is required"),
     agreeTerms: Yup.boolean().oneOf(
       [true],
       "You must agree to the terms and conditions"
@@ -74,13 +74,15 @@ const Contact = () => {
               <Form>
                 <div className="mb-3">
                   <label htmlFor="name" className="form-label">
-                    Name:
+                    Name: <span style={{color:"#EF8354"}}>*</span>
                   </label>
                   <Field
                     type="text"
                     id="name"
                     name="name"
                     className="form-control"
+                    style={{ borderColor: "#2D3142" }}
+
                   />
                   <ErrorMessage
                     name="name"
@@ -91,13 +93,15 @@ const Contact = () => {
 
                 <div className="mb-3">
                   <label htmlFor="email" className="form-label">
-                    Email:
+                    Email:<span style={{color:"#EF8354"}}>*</span>
                   </label>
                   <Field
                     type="email"
                     id="email"
                     name="email"
                     className="form-control"
+                    style={{ borderColor: "#2D3142" }}
+
                   />
                   <ErrorMessage
                     name="email"
@@ -108,13 +112,15 @@ const Contact = () => {
 
                 <div className="mb-3">
                   <label htmlFor="country" className="form-label">
-                    Country:
+                    Country: 
                   </label>
                   <Field
                     type="text"
                     id="country"
                     name="country"
                     className="form-control"
+                    style={{ borderColor: "#2D3142" }}
+
                   />
                   <ErrorMessage
                     name="company"
@@ -125,14 +131,15 @@ const Contact = () => {
 
                 <div className="mb-3">
                   <label htmlFor="reason" className="form-label">
-                    Message:
+                    Message: <span style={{color:"#EF8354"}}>*</span>
                   </label>
                   <Field
                     as="textarea"
                     id="reason"
                     name="reason"
-                    rows="4"
+                    rows="6"
                     className="form-control"
+                    style={{ borderColor: "#2D3142" }}
                   />
                   <ErrorMessage
                     name="reason"
@@ -150,7 +157,7 @@ const Contact = () => {
                       className="form-check-input"
                     />
                     <label htmlFor="agreeTerms" className="form-check-label">
-                      Agree to terms and conditions
+                    <span style={{color:"#EF8354"}}>*</span>Agree to terms and conditions
                     </label>
                     <ErrorMessage
                       name="agreeTerms"
@@ -160,7 +167,7 @@ const Contact = () => {
                   </FormCheck>
                 </div>
 
-                <Button type="submit" variant="primary" disabled={isSubmitting}>
+                <Button type="submit" variant="secondary" disabled={isSubmitting}>
                   Submit
                 </Button>
               </Form>

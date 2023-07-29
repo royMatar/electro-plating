@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 
 const MetalCard = ({ title, price }) => (
-  <Card style={{ width: "9rem" , backgroundColor:'#EF8354',boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)"}}>
+  <Card style={{ width: "9rem" , backgroundColor:'white',boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)"}}>
     <Card.Body>
       <Card.Title style={{fontWeight:"900", color:'#2D3142' }}>{title}</Card.Title>
       <Card.Subtitle className="mb-2 text-muted">

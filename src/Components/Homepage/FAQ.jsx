@@ -4,18 +4,26 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 const FAQ = () => {
   return (
-    <>
+    <Container fluid className="orange-bg">
       <Container
         style={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "start",
           marginTop: "200px",
-          marginBottom: "100px",
+          marginBottom: "30px",
+          paddingTop: "30px",
         }}
       >
         <h1 className="title-header">FAQs</h1>
       </Container>
-      <Container>
+      <Container
+        style={{
+          display: "grid",
+          paddingBottom: "30px",
+          gap: "120px",
+          
+        }}
+      >
         <Row xs={1} sm={1} md={2}>
           <Col>
             <h3>How do I choose the right service?</h3>
@@ -31,8 +39,6 @@ const FAQ = () => {
               aviation, musical instruments, and many more!
             </p>
           </Col>
-        </Row>
-        <Row xs={1} sm={1} md={2}>
           <Col>
             <h3>How long does the process take?</h3>
             <p>
@@ -49,7 +55,7 @@ const FAQ = () => {
           </Col>
         </Row>
       </Container>
-    </>
+    </Container>
   );
 };
 
