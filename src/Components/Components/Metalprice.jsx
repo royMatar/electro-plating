@@ -3,9 +3,9 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 
 const MetalCard = ({ title, price }) => (
-  <Card style={{ width: "9rem" , backgroundColor:'white',boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)"}}>
+  <Card style={{ width: "9rem", backgroundColor: "white", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)" }}>
     <Card.Body>
-      <Card.Title style={{fontWeight:"900", color:'#2D3142' }}>{title}</Card.Title>
+      <Card.Title style={{ fontWeight: "900", color: "#2D3142" }}>{title}</Card.Title>
       <Card.Subtitle className="mb-2 text-muted">
         {price.toLocaleString("en-US", { style: "currency", currency: "USD" })} / OZ
       </Card.Subtitle>
@@ -40,19 +40,16 @@ const Metalprice = () => {
     return <div>Loading...</div>;
   }
 
-  if (error) {
-    return <div>{error}</div>;
+  if (error || !metalData.success) {
+    return <div></div>;
   }
 
   return (
     <Container className="metallist">
-      {metalData && (
-        <>
-          <MetalCard title="Silver" price={1 / metalData.rates.XAG} />
-          <MetalCard title="Gold" price={1 / metalData.rates.XAU} />
-          <MetalCard title="Platinum" price={1 / metalData.rates.XPT} />
-        </>
-      )}
+      {/* Only render the MetalCard components if metalData.success is true */}
+      <MetalCard title="Silver" price={1 / metalData.rates.XAG} />
+      <MetalCard title="Gold" price={1 / metalData.rates.XAU} />
+      <MetalCard title="Platinum" price={1 / metalData.rates.XPT} />
     </Container>
   );
 };

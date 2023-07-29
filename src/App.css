@@ -141,6 +141,16 @@
  background-color:  #2B3035;
  padding: 10px;
 }
+
+/* KeyServices.css */
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 @media screen and (max-width: 767px) {
   .textStyle-responsive {
     font-size: 46px;
@@ -159,7 +169,5 @@
   .textStyle-responsive {
   width: 90%;
   }
-
-  
 }
 

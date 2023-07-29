@@ -28,7 +28,7 @@ const Navigation = () => {
     >
       <Container>
         <Navbar.Brand as={Link} to="/" style={{ marginRight: "20px" }}>
-          <img src="logo-no-background.png" width={200} alt="Logo" />
+          <img src="./assets/logo-no-background.png" width={200} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-${expand}`}
