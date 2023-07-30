@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { Navbar, Container, Offcanvas, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const expand = "lg";
-  const [showOffcanvas, setShowOffcanvas] = useState(false);
 
-  const handleOffcanvasToggle = () => {
-    setShowOffcanvas(!showOffcanvas);
-  };
-
-  const handleLinkClick = () => {
-    setShowOffcanvas(false); // Close the offcanvas when a link is clicked
+  const handleLinkClick = (event) => {
+    const links = document.querySelectorAll("#link"); // Get all the links with the "link" id
+    links.forEach((link) => link.classList.remove("active")); // Remove "active" class from all links
+    event.target.classList.add("active"); // Add "active" class to the clicked link
   };
 
   return (
@@ -32,13 +29,10 @@ const Navigation = () => {
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-${expand}`}
-          onClick={handleOffcanvasToggle}
-          style={{ borderColor: "#EF8354",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)" }}
+          style={{ borderColor: "#EF8354", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)" }}
         />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${expand}`}
-          show={showOffcanvas}
-          onHide={() => setShowOffcanvas(false)}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="end"
           className="offcanvas-custom"
@@ -57,21 +51,46 @@ const Navigation = () => {
           <Offcanvas.Body>
             <Nav
               className="justify-content-end flex-grow-1 pe-4 nav-links"
-              onClick={handleLinkClick}
             >
-              <Nav.Link as={Link} to="/" id="link">
+              <Nav.Link
+                as={Link}
+                to="/"
+                id="link"
+                onClick={handleLinkClick}
+                className="active" // Set the "active" class to the initial active link
+              >
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/about" id="link">
+              <Nav.Link
+                as={Link}
+                to="/about"
+                id="link"
+                onClick={handleLinkClick}
+              >
                 About
               </Nav.Link>
-              <Nav.Link as={Link} to="/services" id="link">
+              <Nav.Link
+                as={Link}
+                to="/services"
+                id="link"
+                onClick={handleLinkClick}
+              >
                 Services
               </Nav.Link>
-              <Nav.Link as={Link} to="/industries" id="link">
+              <Nav.Link
+                as={Link}
+                to="/industries"
+                id="link"
+                onClick={handleLinkClick}
+              >
                 Industries
               </Nav.Link>
-              <Nav.Link as={Link} to="/contact" id="link">
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                id="link"
+                onClick={handleLinkClick}
+              >
                 Contact us
               </Nav.Link>
             </Nav>

@@ -27,6 +27,9 @@
 #link:hover {
   color: #EF8354;
 }
+#link.active {
+  color:#EF8354 ; /* Color of the links after they are clicked */
+}
 
 .textStyle-responsive {
   position: absolute;
