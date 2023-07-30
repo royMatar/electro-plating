@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faMugHot, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -38,11 +38,12 @@ const Footer = () => {
         <div className="text-center">
           <p>&copy; {currentYear} ElectroPlating-LB. All rights reserved.</p>
           <div>
-            Made with{" "}
-            <FontAwesomeIcon
+            Made with{" "} <FontAwesomeIcon
               icon={faHeart}
               style={{ height: "15px", color: "#EF8354" }}
+              beatFade
             />{" "}
+            
             by Roy Matar
           </div>{" "}
         </div>

@@ -66,7 +66,7 @@ const cardTextStyle = {
         <Container
           className="title-container" // Add a CSS class for styling
         >
-          <h1 className="title-header">Industries</h1>
+          <h1 className="title-header">Services</h1>
         </Container>
   
         <Container className="mb-5">

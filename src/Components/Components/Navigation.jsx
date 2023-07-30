@@ -51,7 +51,7 @@ const Navigation = () => {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-              <img src="logo-no-background.png" width={200} alt="Logo" />
+              <img src="./assets/logo-no-background.png" width={200} alt="Logo" />
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
