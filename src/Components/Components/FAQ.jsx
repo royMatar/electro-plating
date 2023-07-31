@@ -4,13 +4,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 const FAQ = () => {
   return (
-    <Container fluid className="orange-bg">
+    <Container fluid style={{marginBottom:"30px"}}>
       <Container
         style={{
           display: "flex",
           justifyContent: "start",
           marginTop: "200px",
-          paddingTop: "30px",
+          paddingTop: "10px",
+          marginBottom:"20px",
         }}
       >
         <h1 className="title-header">FAQs</h1>

@@ -20,7 +20,7 @@ const Heading = () => {
   return (
     <div style={headingStyle}>
       <Image  src="./assets/homepage.jpeg" style={imageStyle} fluid/>
-      <div className="textStyle-responsive">Revolutionize Your Industry with Superior Plating.</div>
+      <div className="textStyle-responsive">Revolutionize Your Product with Superior Plating.</div>
     </div>
   );
 };

@@ -25,7 +25,7 @@
 }
 
 #link:hover {
-  color: #EF8354;
+  color: #ffffff;
 }
 #link.active {
   color:#EF8354 ; /* Color of the links after they are clicked */
@@ -37,8 +37,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 6vw;
-  color: #ffe4d8;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+color:#ffffff81;
   font-family: 'Bowlby One ' sans-serif;
   font-weight: 900;
   text-align: center;

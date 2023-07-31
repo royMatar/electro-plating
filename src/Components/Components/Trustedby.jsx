@@ -10,7 +10,7 @@ const Trustedby = () => {
   ];
 
   return (
-    <Container fluid>
+    <Container fluid className='orange-bg'>
     <Container style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '200px' }}>
       <h1 className="title-header">Trusted by</h1>
       <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', marginTop: '100px' }}>
