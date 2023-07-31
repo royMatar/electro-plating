@@ -1,14 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import { Navbar, Container, Offcanvas, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const expand = "lg";
 
+  const [showOffcanvas, setShowOffcanvas] = useState(false)
+
   const handleLinkClick = (event) => {
     const links = document.querySelectorAll("#link"); // Get all the links with the "link" id
     links.forEach((link) => link.classList.remove("active")); // Remove "active" class from all links
     event.target.classList.add("active"); // Add "active" class to the clicked link
+    setShowOffcanvas(false);
   };
 
   return (
@@ -30,10 +33,13 @@ const Navigation = () => {
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-${expand}`}
           style={{ borderColor: "#EF8354", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)" }}
+        onClick={()=>setShowOffcanvas((prev)=>!prev)}
         />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+          show={showOffcanvas}
+          onHide={()=>setShowOffcanvas(false)}
           placement="end"
           className="offcanvas-custom"
           bg="dark"
@@ -57,7 +63,6 @@ const Navigation = () => {
                 to="/"
                 id="link"
                 onClick={handleLinkClick}
-                className="active" // Set the "active" class to the initial active link
               >
                 Home
               </Nav.Link>

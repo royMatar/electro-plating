@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
 
+
 const Heading = () => {
   const headingStyle = {
     position: 'relative',
@@ -12,13 +13,13 @@ const Heading = () => {
   const imageStyle = {
     width: '100%',
     height: '85vh',
-    filter: 'grayscale(00%)',
+    filter: 'grayscale(100%)',
     objectFit: 'cover',
   };
 
   return (
     <div style={headingStyle}>
-      <Image  src="./assets/version 1.jpg" style={imageStyle} fluid/>
+      <Image  src="./assets/homepage.jpeg" style={imageStyle} fluid/>
       <div className="textStyle-responsive">Revolutionize Your Industry with Superior Plating.</div>
     </div>
   );
