@@ -2,7 +2,12 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faMugHot, faHeart, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMugHot,
+  faHeart,
+  faPhone,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -16,33 +21,40 @@ const Footer = () => {
           <Col md-6>
             <h5>About Us</h5>
             <p>
-              Your company description goes here. You can provide some
-              information about your company, contact details, etc.
+              ElectroplatingLB, founded in 1998, is a leading
+              electroplating and metal finishing company based in Lebanon. With
+              over two decades of experience, we have established ourselves as a
+              reliable and innovative partner in providing high-quality metal
+              coating and finishing solutions to a diverse range of industries.
             </p>
           </Col>
           <Col md-6>
             <h5>Contact Us</h5>
             <p>Email: contact@example.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
-            <p>Address: Your company location/address</p>
+            <p>Phone: +961 7679 4828</p>
+            <p>Address: 54 Industrial Drive, Zouk, Lebanon.</p>
 
             <div className="social-icons">
-            {/* <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:iam@roymatar.com" rel="noopener noreferrer">
                 <FontAwesomeIcon
-                  icon={faPhone}
-                  style={{ height: "35", color: "#EF8354" }}
+                  icon={faEnvelope}
+                  style={{ height: "40", color: "#EF8354", marginLeft: "12px" }}
                 />
-              </a> */}
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              </a>
+              <a
+                href="https://instagram.com/electro.plating.lb?igshid=ZDc4ODBmNjlmNQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  style={{ height: "40", color: "#EF8354",marginLeft:"12px" }}
+                  style={{ height: "40", color: "#EF8354", marginLeft: "12px" }}
                 />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faWhatsapp}
-                  style={{ height: "40", color: "#EF8354", marginLeft:"12px" }}
+                  style={{ height: "40", color: "#EF8354", marginLeft: "12px" }}
                 />
               </a>
             </div>
@@ -52,12 +64,12 @@ const Footer = () => {
         <div className="text-center">
           <p>&copy; {currentYear} ElectroPlating-LB. All rights reserved.</p>
           <div>
-            Made with{" "} <FontAwesomeIcon
+            Made with{" "}
+            <FontAwesomeIcon
               icon={faHeart}
-              style={{ height: "15px", color: "#EF8354", }}
+              style={{ height: "15px", color: "#EF8354" }}
               beatFade
             />{" "}
-            
             by Roy Matar
           </div>{" "}
         </div>

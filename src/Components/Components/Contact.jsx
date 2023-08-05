@@ -60,7 +60,7 @@ const Contact = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          marginTop: "200px",
+          marginTop: "100px",
         }}
       >
         <h1 className="title-header mb-5">Contact</h1>
