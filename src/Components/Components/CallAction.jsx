@@ -9,7 +9,7 @@ import Metalprice from "./Metalprice";
 const CallAction = () => {
   return (
     <Container className="callaction">
-    <Row className="firstcol">
+    <Row className="callactioncol">
       <Col>
         Ready to experience the ultimate transformation? Unleash your products’ true potential today!
         <br />

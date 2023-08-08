@@ -27,8 +27,10 @@
 #link:hover {
   color: #ffffff;
 }
+
 #link.active {
-  color:#EF8354 ; /* Color of the links after they are clicked */
+  color: #EF8354;
+  /* Color of the links after they are clicked */
 }
 
 .textStyle-responsive {
@@ -37,12 +39,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 6vw;
-color:#ffffff81;
+  color: #ffffff81;
   font-family: 'Bowlby One ' sans-serif;
   font-weight: 900;
   text-align: center;
   width: 65%;
   line-height: 1;
+}
+
+
+
+.textStyle-responsive-about{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 9vw;
+  color: #ffffff81;
+  font-family: 'Bowlby One ' sans-serif;
+  font-weight: 900;
+  text-align: center;
 }
 
 .introsection {
@@ -60,14 +76,21 @@ color:#ffffff81;
 }
 
 .firstcol {
-  font-size: 36px;
+  font-size: 48px;
+  font-family: 'Bowlby One ' sans-serif;
+  color: #2B3035;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+}
+
+.callactioncol{
+  font-size: 40px;
   font-family: 'Bowlby One ' sans-serif;
   color: #2B3035;
   font-weight: 900;
   text-align: start;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   width: 100%;
-
 }
 
 .secondcol {
@@ -99,7 +122,7 @@ color:#ffffff81;
 }
 
 /* KeyServices.css */
-.imageeffect{
+.imageeffect {
   filter: grayscale(100%)
 }
 
@@ -107,7 +130,7 @@ color:#ffffff81;
   filter: grayscale(0%);
 }
 
-.title-header{
+.title-header {
   font-family: 'Bowlby One ' sans-serif;
   color: #2B3035;
   font-size: 48px;
@@ -117,32 +140,33 @@ color:#ffffff81;
 
 }
 
-.orange-bg{
+.orange-bg {
   background-color: #EF8354;
 }
 
-.form-label{
+.form-label {
   font-family: 'Bowlby One ' sans-serif;
   color: #2B3035;
   font-size: 18px;
   font-weight: bold;
 }
 
-.faq-title{
+.faq-title {
   font-family: 'Bowlby One ' sans-serif;
   color: #2B3035;
   font-weight: 800;
 }
-.faq-text{
+
+.faq-text {
   font-family: 'Bowlby One ' sans-serif;
   color: #2B3035;
   font-weight: bold;
 }
 
-.footer-bg{
+.footer-bg {
   color: #8a8a8a;
- background-color:  #2B3035;
- padding: 10px;
+  background-color: #2B3035;
+  padding: 10px;
 }
 
 /* KeyServices.css */
@@ -165,12 +189,12 @@ color:#ffffff81;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  
-  .imageeffect{
+
+  .imageeffect {
     filter: grayscale(0%);
   }
+
   .textStyle-responsive {
-  width: 90%;
+    width: 90%;
   }
 }
-
