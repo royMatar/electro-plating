@@ -1,46 +1,41 @@
-import React, { memo } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
-const industries = [
+const services = [
   {
     id: 1,
-    title: "Automotive",
-    text: "Enhance your vehicle with our premium electroplating treatments.",
+    title: "Gold, Silver and Nickel Plating",
+    text: "Our gold, silver, and nickel plating services add a touch of elegance and durability to a wide variety of products. Whether it's jewelry, luxury accessories, or industrial components, our team meticulously applies these precious metal coatings to achieve a brilliant finish that stands the test of time.",
     image: "./assets/engine.jpeg",
   },
   {
     id: 2,
-    title: "Jewelry",
-    text: " Elevate your worn jewelry items into exquisite treasures through our expert electroplating services.",
+    title: "Chrome and Copper Plating",
+    text: "Enhance the appearance and corrosion resistance of your products with our chrome and copper plating services. We apply these finishes to various items, including automotive parts, plumbing fixtures, and decorative pieces, to create a stunning, lustrous surface.",
     image: "./assets/accessories.jpeg",
   },
   {
     id: 3,
-    title: "Furniture",
-    text: "Experience unparalleled artistry with our electroplating solutions for furniture.",
+    title: "Anodizing",
+    text: "For aluminum and other non-ferrous metals, our anodizing process offers excellent protection and color options. Anodized components are widely used in industries such as aerospace, electronics, and architecture, where durability and aesthetic appeal are crucial.",
     image: "./assets/furniture.jpeg",
   },
   {
     id: 4,
-    title: "Plumbing",
-    text: "Achieve lasting durability and precision plating for sanitary equipment.",
+    title: "Custom Finishes",
+    text: "We understand that some projects require unique and distinctive finishes. Our team is equipped to work closely with you to develop custom solutions that match your specific requirements and design preferences. Let us turn your vision into reality!",
     image: "./assets/pipes.jpeg",
   },
   {
     id: 5,
-    title: "Restoration",
-    text: "Impeccable results guaranteed with our meticulous electroplating processes for restoration projects.",
+    title: "Quality Assurance",
+    text: "Quality is our top priority at ElectroplatingLB. With our strict quality control measures, state-of-the-art equipment, and skilled technicians, we ensure that each item leaving our facility meets the highest standards of excellence.",
     image: "./assets/motorcycle.jpeg",
   },
-  {
-    id: 6,
-    title: "Military",
-    text: "Revitalize your firearms with our electroplating service, transforming them into gleaming pieces.",
-    image: "./assets/goldgun.jpeg",
-  },
+  
 ];
 
 const cardTitleStyle = {
@@ -57,26 +52,34 @@ const cardTextStyle = {
   fontFamily: "'Bowlby One', sans-serif",
 };
 
-const KeyServices = () => {
+const ServicesCards = () => {
   return (
-    <
-    >
+    <>
       <Container
         className="title-container" // Add a CSS class for styling
       >
         <h1 className="title-header">Services</h1>
       </Container>
+      <Container>
+        <h3>
+          At ElectroplatingLB, we offer a comprehensive range of electroplating
+          and metal finishing services, tailored to meet the diverse needs of
+          our clients. Our commitment to excellence, advanced technology, and
+          skilled craftsmanship ensure that we deliver high-quality results for
+          every project. Explore our services below:
+        </h3>
+      </Container>
 
       <Container className="mb-5">
         <Row xs={1} sm={2} md={3} className="g-4">
-          {industries.map((industry) => (
-            <Col key={industry.id}>
+          {services.map((service) => (
+            <Col key={service.id}>
               <Card className="h-100" style={{ borderWidth: "0" }}>
                 {" "}
                 {/* Use CSS classes for styling */}
                 <Card.Img
                   variant="top"
-                  src={industry.image}
+                  src={service.image}
                   height={300}
                   style={{ objectFit: "cover", borderRadius: "40px" }} // Remove borderRadius from here
                   className="imageeffect"
@@ -84,9 +87,9 @@ const KeyServices = () => {
                 />
                 <Card.Body>
                   <Card.Title style={cardTitleStyle}>
-                    {industry.title}
+                    {service.title}
                   </Card.Title>
-                  <Card.Text style={cardTextStyle}>{industry.text}</Card.Text>
+                  <Card.Text style={cardTextStyle}>{service.text}</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -97,4 +100,4 @@ const KeyServices = () => {
   );
 };
 
-export default memo(KeyServices);
+export default ServicesCards;

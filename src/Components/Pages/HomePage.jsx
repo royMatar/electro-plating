@@ -8,8 +8,9 @@ import Contact from "../Components/Contact";
 import FAQ from "../Components/FAQ";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ServicesCards from '../Components/ServicesCards';
 
-const LazyLoadedComponent = lazy(() => import("../Components/ServicesCards"));
+const LazyLoadedComponent = lazy(() => import("../Components/IndustriesCards"));
 
 const HomePage = () => {
   const [isComponentVisible, setIsComponentVisible] = React.useState(false);
@@ -99,6 +100,16 @@ const HomePage = () => {
       >
         <CallAction />
       </motion.div>
+      <motion.div
+        ref={callActionRef}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={isComponentVisible ? { opacity: 1, scale: 1 } : {}}
+        exit={{ opacity: 0, scale: 0.5 }}
+        transition={{ duration: 1 }}
+      >
+        <ServicesCards />
+      </motion.div>
+
       <motion.div
         ref={lazyLoadedComponentRef}
         initial={{ opacity: 0, scale: 0.5 }}
