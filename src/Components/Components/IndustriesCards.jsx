@@ -67,7 +67,7 @@ const KeyIndustries = () => {
         
       </Container>
       <Container>
-      <h3>
+      <h3 className="sub-title">
           At ElectroplatingLB, we take pride in offering our electroplating and
           metal finishing expertise to a diverse range of industries. With our
           advanced technology and skilled team, we cater to the specific needs

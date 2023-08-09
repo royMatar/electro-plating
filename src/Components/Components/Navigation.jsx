@@ -1,11 +1,13 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Navbar, Container, Offcanvas, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navigation = () => {
   const expand = "lg";
 
-  const [showOffcanvas, setShowOffcanvas] = useState(false)
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
 
   const handleLinkClick = (event) => {
     const links = document.querySelectorAll("#link"); // Get all the links with the "link" id
@@ -32,14 +34,17 @@ const Navigation = () => {
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-${expand}`}
-          style={{ borderColor: "#EF8354", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)" }}
-        onClick={()=>setShowOffcanvas((prev)=>!prev)}
+          style={{
+            borderColor: "#EF8354",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)",
+          }}
+          onClick={() => setShowOffcanvas((prev) => !prev)}
         />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           show={showOffcanvas}
-          onHide={()=>setShowOffcanvas(false)}
+          onHide={() => setShowOffcanvas(false)}
           placement="end"
           className="offcanvas-custom"
           bg="dark"
@@ -51,19 +56,16 @@ const Navigation = () => {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-              <img src="./assets/logo-no-background.png" width={200} alt="Logo" />
+              <img
+                src="./assets/logo-no-background.png"
+                width={200}
+                alt="Logo"
+              />
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav
-              className="justify-content-end flex-grow-1 pe-4 nav-links"
-            >
-              <Nav.Link
-                as={Link}
-                to="/"
-                id="link"
-                onClick={handleLinkClick}
-              >
+            <Nav className="justify-content-end flex-grow-1 pe-4 nav-links">
+              <Nav.Link as={Link} to="/" id="link" onClick={handleLinkClick}>
                 Home
               </Nav.Link>
               <Nav.Link
@@ -98,6 +100,20 @@ const Navigation = () => {
               >
                 Contact us
               </Nav.Link>
+              {/* <div className="social-icons">
+                <a href="https://www.facebook.com">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  style={{ height: "40", color: "#EF8354", marginLeft: "12px" }}
+                />
+                </a>
+                <a href="https://www.twitter.com">
+                <FontAwesomeIcon
+                  icon={faWhatsapp}
+                  style={{ height: "40", color: "#EF8354", marginLeft: "12px" }}
+                />
+                </a>
+              </div> */}
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

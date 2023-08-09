@@ -3,9 +3,9 @@ import Container from "react-bootstrap/Container";
 
 const AboutContent = () => {
   return (
-    <Container>
-      <h2>About ElectroPlating-LB</h2>
-      <h3>Company Overview:</h3>
+    <Container className="about-container">
+      <h2 className="title-header">About ElectroPlating-LB</h2>
+      <h3 className="secondcol">Overview:</h3>
       <p>
         ElectroplatingLB, founded in April 1998, is a leading electroplating and
         metal finishing company based in Lebanon. With over two decades of
@@ -13,7 +13,7 @@ const AboutContent = () => {
         partner in providing high-quality metal coating and finishing solutions
         to a diverse range of industries.
       </p>
-      <h3>Our Mission:</h3>
+      <h3 className="secondcol">Our Mission:</h3>
       <p>
         At ElectroplatingLB, our mission is to deliver exceptional
         electroplating and metal finishing services that enhance the
@@ -22,7 +22,7 @@ const AboutContent = () => {
         and skilled craftsmanship to exceed our clients' expectations while
         contributing to a sustainable future.
       </p>
-      <h3>Why Choose ElectroplatingLB?</h3>
+      <h3 className="secondcol">Why Choose ElectroplatingLB?</h3>
       <ul>
         <li>
           Unmatched Expertise: Our team of experienced professionals brings

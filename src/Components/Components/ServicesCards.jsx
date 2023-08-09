@@ -61,7 +61,7 @@ const ServicesCards = () => {
         <h1 className="title-header">Services</h1>
       </Container>
       <Container>
-        <h3>
+        <h3 className="sub-title">
           At ElectroplatingLB, we offer a comprehensive range of electroplating
           and metal finishing services, tailored to meet the diverse needs of
           our clients. Our commitment to excellence, advanced technology, and
