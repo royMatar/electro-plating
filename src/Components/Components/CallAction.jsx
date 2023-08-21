@@ -13,7 +13,7 @@ const CallAction = () => {
       <Col>
         Ready to experience the ultimate transformation? Unleash your products’ true potential today!
         <br />
-        <Button variant="dark" className="callactionbtn" as={Link} to="/contact">
+        <Button variant="dark" className="callactionbtn" as={Link} to="/contact" style={{ color: "#EF8354" }}>
           Contact us!
         </Button>
       </Col>

@@ -13,7 +13,6 @@ const ContactPage = () => {
       transition={{ duration: 1 }} // Animation duration
     >
     <Contact/>
-    <Trustedby/>
     <FAQ/>
     </motion.div>
     </>

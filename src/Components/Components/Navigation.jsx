@@ -3,7 +3,7 @@ import { Navbar, Container, Offcanvas, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Navigation = () => {
   const expand = "lg";
 
@@ -14,6 +14,10 @@ const Navigation = () => {
     links.forEach((link) => link.classList.remove("active")); // Remove "active" class from all links
     event.target.classList.add("active"); // Add "active" class to the clicked link
     setShowOffcanvas(false);
+    window.scrollTo({
+      top: 0,
+      behavior: "auto",
+    });
   };
 
   return (
@@ -100,20 +104,26 @@ const Navigation = () => {
               >
                 Contact us
               </Nav.Link>
-              {/* <div className="social-icons">
-                <a href="https://www.facebook.com">
+              <div className="social-icons">
+              <a href="https://www.facebook.com">
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  style={{ height: "40", color: "#EF8354", marginLeft: "12px" }}
+                  className="social-icon"
                 />
-                </a>
-                <a href="https://www.twitter.com">
+              </a>
+              <a href="https://www.twitter.com">
                 <FontAwesomeIcon
                   icon={faWhatsapp}
-                  style={{ height: "40", color: "#EF8354", marginLeft: "12px" }}
+                  className="social-icon"
                 />
-                </a>
-              </div> */}
+              </a>
+              <a href="mailto:iam@roymatar.com" rel="noopener noreferrer">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="social-icon"
+                />
+              </a>
+            </div>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

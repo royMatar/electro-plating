@@ -12,7 +12,7 @@ const Intro = () => {
           <Col className="secondcol" sm={6}>
             We’re the go-to electroplating company, thriving on expert
             techniques and top-notch quality to transform products and breathe
-            new life into old stuff. Let us show you the true meaning of
+            new life into old items. Let us show you the true meaning of
             brilliance!
           </Col>
         </Row>

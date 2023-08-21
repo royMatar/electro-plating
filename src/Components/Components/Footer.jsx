@@ -3,9 +3,7 @@ import Container from "react-bootstrap/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import {
-  faMugHot,
   faHeart,
-  faPhone,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 

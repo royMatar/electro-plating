@@ -23,10 +23,7 @@ const Contact = () => {
       .email("Invalid email")
       .required("Your email is required"),
     reason: Yup.string().required("Your message is required"),
-    agreeTerms: Yup.boolean().oneOf(
-      [true],
-      "You must agree to the terms and conditions"
-    ),
+    
   });
 
   const [showAlert, setShowAlert] = useState(false);
@@ -120,7 +117,7 @@ const Contact = () => {
 
                 <div className="mb-3">
                   <label htmlFor="country" className="form-label">
-                    Country:
+                    Location:
                   </label>
                   <Field
                     type="text"
@@ -163,35 +160,9 @@ const Contact = () => {
                   />
                 </div>
 
-                <div className="mb-3">
-                  <FormCheck>
-                    <Field
-                      type="checkbox"
-                      id="agreeTerms"
-                      name="agreeTerms"
-                      className="form-check-input"
-                    />
-                    <label
-                      htmlFor="agreeTerms"
-                      className="form-check-label"
-                      style={{ color: "#2D3142", fontWeight: "700" }}
-                    >
-                      <span style={{ color: "#EF8354" }}>*</span>Agree to terms
-                      and conditions
-                    </label>
-                    <ErrorMessage
-                      name="agreeTerms"
-                      component="div"
-                      style={{
-                        color: "#EF8354",
-                        fontSize: "14px",
-                        marginTop: "5px",
-                      }}
-                    />
-                  </FormCheck>
-                </div>
+                
 
-                <Button type="submit" variant="dark" disabled={isSubmitting}>
+                <Button type="submit" variant="dark" disabled={isSubmitting} style={{ color: "#EF8354" }} >
                   Submit
                 </Button>
               </Form>
@@ -203,6 +174,8 @@ const Contact = () => {
               variant="success"
               onClose={() => setShowAlert(false)}
               dismissible
+              className="position-fixed bottom-0 end-0 m-4"
+              style={{ zIndex: 1000 }}
             >
               Thank you for your submission! We will reply to you shortly.
             </Alert>
