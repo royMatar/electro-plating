@@ -102,8 +102,7 @@
 
 .callaction {
   height: auto;
-  padding: 70px;
-}
+margin-top: 150px;}
 
 .sub-title{
   font-size: 18px;
@@ -125,9 +124,8 @@
 
 
 .callactionbtn {
-  margin-top: 30px;
+  margin-top: 10px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  margin-bottom: 50px;
 }
 
 /* KeyServices.css */
@@ -144,9 +142,7 @@
   color: #2B3035;
   font-size: 48px;
   font-weight: bold;
-  margin-top: 20px;
   margin-bottom: 40px;
-  /* text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.726); */
 
 }
 
@@ -183,8 +179,8 @@
 
 .title-container {
   display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  justify-content: start;
+  margin-top: 150px;
   margin-bottom: 15px;
 }
 
@@ -204,11 +200,14 @@
   margin-left: 12px;
 }
 
-
-@media screen and (max-width: 767px) {
+.max-height-400 {
+  max-height: 400px;
+}
+@media screen and (max-width: 840px) {
   .textStyle-responsive {
     font-size: 46px;
   }
+
 
   .offcanvas-body {
     display: flex;

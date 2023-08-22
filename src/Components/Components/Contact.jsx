@@ -57,10 +57,10 @@ const Contact = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          marginTop: "100px",
+          marginTop: "150px",
         }}
       >
-        <h1 className="title-header mb-5">Contact</h1>
+        <h1 className="title-header mb-5">Contact us!</h1>
       </Container>
       <Row>
         <Col md={6} className="mx-auto">
@@ -73,7 +73,7 @@ const Contact = () => {
               <Form>
                 <div className="mb-3">
                   <label htmlFor="name" className="form-label">
-                    Name: <span style={{ color: "#EF8354" }}>*</span>
+                    Name/Company: <span style={{ color: "#EF8354" }}>*</span>
                   </label>
                   <Field
                     type="text"

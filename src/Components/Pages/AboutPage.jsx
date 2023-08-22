@@ -14,12 +14,13 @@ const AboutPage = () => {
     >
       <AboutHeading/>
     </motion.div>
-    <AboutContent/>
         <motion.div
         initial={{ opacity: 0, scale: 0.5 }} 
         animate={{ opacity: 1, scale: 1 }} 
         transition={{ duration: 1 }} 
       >
+            <AboutContent/>
+
         <Trustedby/>
         <FAQ/>
       </motion.div>

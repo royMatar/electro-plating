@@ -9,26 +9,26 @@ const services = [
     id: 1,
     title: "ElectroPlating",
     text: "Our gold, silver, chrome and other plating services add a touch of elegance and durability to a wide variety of products. Whether it's jewelry, luxury accessories, or industrial components, our team meticulously applies these precious metal coatings to achieve a brilliant finish that stands the test of time.",
-    image: "./assets/engine.jpeg",
+    image: "./assets/electroplating.jpeg",
   },
   
   {
     id: 2,
     title: "Anodizing",
     text: "For aluminum and other non-ferrous metals, our anodizing process offers excellent protection and color options. Anodized components are widely used in industries such as aerospace, electronics, and architecture, where durability and aesthetic appeal are crucial.",
-    image: "./assets/furniture.jpeg",
+    image: "./assets/anodizing.jpg",
   },
   {
     id: 3,
     title: "Custom Finishes",
     text: "We understand that some projects require unique and distinctive finishes. Our team is equipped to work closely with you to develop custom solutions that match your specific requirements and design preferences. Let us turn your vision into reality!",
-    image: "./assets/pipes.jpeg",
+    image: "./assets/Quality.jpeg",
   },
   {
     id: 4,
     title: "Quality Assurance",
     text: "Quality is our top priority at ElectroplatingLB. With our strict quality control measures, state-of-the-art equipment, and skilled technicians, we ensure that each item leaving our facility meets the highest standards of excellence.",
-    image: "./assets/motorcycle.jpeg",
+    image: "./assets/qualityassurance.jpeg",
   },
   
 ];
@@ -53,15 +53,13 @@ const cardTextStyle = {
         <Container className="title-container">
           <h1 className="title-header">Services</h1>
         </Container>
-        {/* <Container>
+        <Container>
           <h3 className="sub-title">
-            At ElectroplatingLB, we offer a comprehensive range of electroplating
-            and metal finishing services, tailored to meet the diverse needs of
-            our clients. Our commitment to excellence, advanced technology, and
+             Our commitment to excellence, advanced technology, and
             skilled craftsmanship ensure that we deliver high-quality results for
             every project. Explore our services below:
           </h3>
-        </Container> */}
+        </Container>
   
   <Container className="mb-5">
   {services.map((service, index) => (
@@ -74,7 +72,7 @@ const cardTextStyle = {
           <Card.Img
             variant="top"
             src={service.image}
-            height='400'
+            height='450'
             style={{
               objectFit: "cover",
               borderRadius: "20px 20px 20px 20px",
@@ -86,7 +84,7 @@ const cardTextStyle = {
       </Col>
       <Col xs={12} md={6}>
         <Card className="h-100" style={{ borderWidth: "0" }}>
-          <Card.Body className="d-flex flex-column justify-content-center align-items-center h-100">
+          <Card.Body className="d-flex flex-column justify-content-center  h-100">
             <Card.Title style={cardTitleStyle}>{service.title}</Card.Title>
             <Card.Text style={cardTextStyle}>{service.text}</Card.Text>
           </Card.Body>

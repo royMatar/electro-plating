@@ -12,7 +12,7 @@ const Trustedby = () => {
   return (
     <Container fluid className='orange-bg'>
     <Container style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '200px' }}>
-      <h1 className="title-header">Trusted by</h1>
+      <h1 className="title-header" style={{ marginTop: '30px' }}>Trusted by</h1>
       <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', marginTop: '50px' }}>
         {companyLogos.map((company, index) => (
           <a key={index} href={company.url} target="_blank" rel="noopener noreferrer">
