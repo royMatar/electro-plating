@@ -12,6 +12,7 @@ const Contact = () => {
   const initialValues = {
     name: "",
     email: "",
+    phonenumber:'',
     company: "",
     reason: "",
     agreeTerms: false,
@@ -60,7 +61,7 @@ const Contact = () => {
           marginTop: "150px",
         }}
       >
-        <h1 className="title-header mb-5">Contact us!</h1>
+        <h1 className="title-header mb-5">Contact us</h1>
       </Container>
       <Row>
         <Col md={6} className="mx-auto">
@@ -112,6 +113,19 @@ const Contact = () => {
                       fontSize: "14px",
                       marginTop: "5px",
                     }}
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="phonenumber" className="form-label">
+                    Phone Number:
+                  </label>
+                  <Field
+                    type="tel"
+                    id="phonenumber"
+                    name="phonenumber"
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    className="form-control"
+                    style={{ borderColor: "#2D3142" }}
                   />
                 </div>
 

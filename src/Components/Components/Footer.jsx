@@ -33,7 +33,7 @@ const Footer = () => {
             <p>Address: 54 Industrial Drive, Zouk, Lebanon.</p>
 
             <div className="social-icons">
-              <a href="mailto:iam@roymatar.com" rel="noopener noreferrer">
+              <a href="mailto:info@electroplating-lb.com" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faEnvelope}
                   style={{ height: "40", color: "#EF8354", marginLeft: "12px" }}
@@ -46,12 +46,6 @@ const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  style={{ height: "40", color: "#EF8354", marginLeft: "12px" }}
-                />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={faWhatsapp}
                   style={{ height: "40", color: "#EF8354", marginLeft: "12px" }}
                 />
               </a>

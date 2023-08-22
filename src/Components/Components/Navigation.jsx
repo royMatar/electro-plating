@@ -105,19 +105,14 @@ const Navigation = () => {
                 Contact us
               </Nav.Link>
               <div className="social-icons">
-              <a href="https://www.facebook.com">
+              <a href="https://instagram.com/electro.plating.lb?igshid=ZDc4ODBmNjlmNQ=="
+                target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="social-icon"
                 />
               </a>
-              <a href="https://www.twitter.com">
-                <FontAwesomeIcon
-                  icon={faWhatsapp}
-                  className="social-icon"
-                />
-              </a>
-              <a href="mailto:iam@roymatar.com" rel="noopener noreferrer">
+              <a href="mailto:info@electroplating-lb.com" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faEnvelope}
                   className="social-icon"

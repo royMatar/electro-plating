@@ -29,7 +29,7 @@ const AboutContent = () => {
         </Col>
         <Col md={6} className="text-center">
           <Image
-            src="./assets/image16.jpg"
+            src="./assets/car.jpeg"
             alt="Image Description"
             className="img-fluid rounded-pill"
             style={{
@@ -43,7 +43,7 @@ const AboutContent = () => {
       <Row className="mb-4">
         <Col md={6} className="text-center">
           <Image
-            src="./assets/chooseus.jpeg"
+            src="./assets/lamp.jpeg"
             alt="Image Description"
             className="img-fluid rounded-pill"
             style={{
@@ -53,7 +53,7 @@ const AboutContent = () => {
             }}
           />
         </Col>
-        <Col >
+        <Col style={{marginTop:'30px'}} >
           <h3 className="secondcol">Why Choose ElectroplatingLB?</h3>
           <ul>
             <li>

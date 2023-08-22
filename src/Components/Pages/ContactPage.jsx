@@ -1,7 +1,6 @@
 import React from 'react'
 import Contact from '../Components/Contact'
 import FAQ from '../Components/FAQ'
-import Trustedby from '../Components/Trustedby'
 import { motion } from 'framer-motion';
 
 const ContactPage = () => {
