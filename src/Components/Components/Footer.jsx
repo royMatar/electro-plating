@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="footer-bg">
       <Container>
         <Row>
-          <Col md-6>
+          <Col md={6}>
             <h5>About Us</h5>
             <p>
               ElectroplatingLB, founded in 1998, is a leading
@@ -26,7 +26,7 @@ const Footer = () => {
               coating and finishing solutions to a diverse range of industries.
             </p>
           </Col>
-          <Col md-6>
+          <Col md={6}>
             <h5>Contact Us</h5>
             <p>Email: contact@example.com</p>
             <p>Phone: +961 7679 4828</p>

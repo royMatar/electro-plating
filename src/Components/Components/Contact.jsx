@@ -12,10 +12,8 @@ const Contact = () => {
   const initialValues = {
     name: "",
     email: "",
-    phonenumber:'',
     company: "",
     reason: "",
-    agreeTerms: false,
   };
 
   const validationSchema = Yup.object().shape({
@@ -115,20 +113,6 @@ const Contact = () => {
                     }}
                   />
                 </div>
-                <div className="mb-3">
-                  <label htmlFor="phonenumber" className="form-label">
-                    Phone Number:
-                  </label>
-                  <Field
-                    type="tel"
-                    id="phonenumber"
-                    name="phonenumber"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                    className="form-control"
-                    style={{ borderColor: "#2D3142" }}
-                  />
-                </div>
-
                 <div className="mb-3">
                   <label htmlFor="country" className="form-label">
                     Location:

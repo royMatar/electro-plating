@@ -1,23 +1,29 @@
 import React, { useState } from "react";
 import { Navbar, Container, Offcanvas, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import _debounce from "lodash/debounce";
+
 const Navigation = () => {
   const expand = "lg";
 
   const [showOffcanvas, setShowOffcanvas] = useState(false);
+  const debouncedScrollToTop = _debounce(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, 500);
 
   const handleLinkClick = (event) => {
     const links = document.querySelectorAll("#link"); // Get all the links with the "link" id
     links.forEach((link) => link.classList.remove("active")); // Remove "active" class from all links
     event.target.classList.add("active"); // Add "active" class to the clicked link
     setShowOffcanvas(false);
-    window.scrollTo({
-      top: 0,
-      behavior: "auto",
-    });
+    
+    debouncedScrollToTop();
   };
 
   return (
@@ -105,20 +111,20 @@ const Navigation = () => {
                 Contact us
               </Nav.Link>
               <div className="social-icons">
-              <a href="https://instagram.com/electro.plating.lb?igshid=ZDc4ODBmNjlmNQ=="
-                target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  className="social-icon"
-                />
-              </a>
-              <a href="mailto:info@electroplating-lb.com" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  className="social-icon"
-                />
-              </a>
-            </div>
+                <a
+                  href="https://instagram.com/electro.plating.lb?igshid=ZDc4ODBmNjlmNQ=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faInstagram} className="social-icon" />
+                </a>
+                <a
+                  href="mailto:info@electroplating-lb.com"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faEnvelope} className="social-icon" />
+                </a>
+              </div>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
