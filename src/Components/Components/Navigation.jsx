@@ -119,7 +119,7 @@ const Navigation = () => {
                   <FontAwesomeIcon icon={faInstagram} className="social-icon" />
                 </a>
                 <a
-                  href="mailto:info@electroplating-lb.com"
+                  href="mailto:ralphkamel.rk@gmail.com"
                   rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="social-icon" />

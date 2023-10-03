@@ -4,7 +4,6 @@ import * as Yup from "yup";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import FormCheck from "react-bootstrap/FormCheck";
 import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
 
@@ -29,7 +28,7 @@ const Contact = () => {
 
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
     try {
-      const response = await fetch("https://formspree.io/f/xknlgdkz", {
+      const response = await fetch("https://formspree.io/f/xbjvoprp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -172,7 +171,7 @@ const Contact = () => {
               variant="success"
               onClose={() => setShowAlert(false)}
               dismissible
-              className="position-fixed bottom-0 end-0 m-4"
+              className="mt-3"
               style={{ zIndex: 1000 }}
             >
               Thank you for your submission! We will reply to you shortly.
